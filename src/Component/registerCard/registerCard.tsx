@@ -1,18 +1,17 @@
 import React, { useState } from "react";
+const [email, setEmail] = useState("");
+const [password, setPassword] = useState("");
+const [username, setUsername] = useState("");
+
+const handleRegister = (e: React.FormEvent<HTMLFormElement>) => {
+  e.preventDefault();
+
+  console.log("Username:", username);
+  console.log("Email:", email);
+  console.log("Password:", password);
+};
 
 const RegisterCard: React.FC = () => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [username, setUsername] = useState("");
-
-  const handleRegister = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-
-    console.log("Username:", username);
-    console.log("Email:", email);
-    console.log("Password:", password);
-  };
-
   return (
     <form onSubmit={handleRegister}>
       <div>
