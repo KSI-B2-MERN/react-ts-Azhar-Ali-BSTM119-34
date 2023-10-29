@@ -1,16 +1,19 @@
 import Header from "./Component/Header/header";
-import RegisterCard from "./Component/registerCard/registerCard";
-import SignInForm from "./Component/signInForm.tsx/signIn";
+import Signup from "./Component/registerCard/signUp";
+import LoginIn from "./Component/signInForm.tsx/loginIn";
 
 function App() {
+  const containerStyle = {
+    margin: "0 20%", // 20% margin on both sides
+  };
   return (
     <>
       {/* <label className="bg-black text-white ">First name</label>
       <input type="input" placeholder="First Name"></input>\ */}
-      <div>
+      <div className="w-screen h-screen bg-white mx-auto">
         <Header />
-        <SignInForm />
-        <RegisterCard />
+        <Signup />
+        <LoginIn />
       </div>
     </>
   );
