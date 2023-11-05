@@ -1,20 +1,11 @@
-import Header from "./Component/Header/header";
-import Signup from "./Component/registerCard/signUp";
-import LoginIn from "./Component/signInForm.tsx/loginIn";
+import React from "react";
 
-function App() {
-  const containerStyle = {
-    margin: "0 20%", // 20% margin on both sides
-  };
+const App: React.FC = () => {
   return (
-    <>
-      <div className="w-screen h-screen bg-white mx-auto">
-        <Header />
-        <Signup />
-        <LoginIn />
-      </div>
-    </>
+    <div>
+      <h1>Hello, world!</h1>
+    </div>
   );
-}
+};
 
 export default App;
